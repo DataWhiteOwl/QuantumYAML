@@ -1,0 +1,33 @@
+person:
+  fname: "Madan"
+  lname: Ready
+  gender: 'M'
+  age : 35
+  weight: 68.5
+  is_student: false
+  is_Asian: yes # will be bool for <1.2 version, otherwise it will be str string
+  hobbis:
+    - reading
+    - travelling
+    - hiking
+  address:
+    Street: 123 Main Street
+    city: somecity
+    zipode: 12345
+
+hex: 0x12d6 #evaluates to 4822
+octal: 0o24432 #evaluate to 10522 0 for <1.2, otherwise 0o 
+positive-infinity: .inf # evaluate to infinity
+negative-infinity: -.inf #evaluate to negative infinity
+invalidNumber: .NAN #Not a Number
+null-value: null
+null-value1: ~
+null-value2:  
+plainStyle: JohnDoe
+single_quate_style: '''text with : colon'''
+double_quote_style: "Line\nLine2\nLine3"
+
+
+
+
+

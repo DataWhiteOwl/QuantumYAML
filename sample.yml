@@ -1,0 +1,13 @@
+person:
+  name: John
+  age : 35
+  gender: M
+  is_student: false
+  hobbis:
+    - reading
+    - travelling
+    - hiking
+  address:
+    Street: 123 Main Street
+    city: somecity
+    zipode: 12345

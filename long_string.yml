@@ -1,0 +1,47 @@
+########## Defining Long/Multi-line String in YAML ##########
+
+##### First Approch - Pipe #####
+### Pipe (|) ---> means preserve in YAML ###
+
+literal_block: | # use - and + to subtract or retain space beween two string blocks
+  This is literal block
+  Newline are preserved
+  So is indentation
+  Trailing space are preserved as well
+
+### Output - 
+# literal_block:
+# This is literal block
+# Newline are preserved
+# So is indentation
+# Trailing space are preserved as well
+
+##### Second Approch - Folded Block Style #####
+### Folder Block Style (>) ---> Used to fold new line into spaces. This is used for text where you don't wanrt hard line appear in the output ###
+
+folded_block: >  # use - and + to subtract or retain space beween two string blocks
+  This is folded block.
+  Newline are preserved.
+  So is indentation.
+  Trailing space are preserved as well.
+
+### Output - 
+# folded_block:
+# This is folded block. Newline are preserved. So is indentation. Trailing space are preserved as well.
+
+
+###### Date and TimeStamp in YAML
+# Standard Data Format : YYYY-MM-DD ---> 2034-07-23
+
+# Full Data & Time Format (Canonical) : YYYY-MM-DDTHH:MM:SSZ
+# T - separates the date and time
+# Z - indicate UTC time
+# Example - 2034-07-23T10:20:30Z
+
+# Full Data & Time with Timezone (iso8601) : 
+# YYYY-MM-DDTHH:MM:SS+HH:MM
+# YYYY-MM-DDTHH:MM:SS-HH:MM
+# Example - 2034-07-23T10:20:30+05:30
+
+# Others Examples - 2034-07-23 10:20:30 +05:30
+# Others Examples - 2034-07-23 10:20:30

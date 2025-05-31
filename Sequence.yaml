@@ -1,0 +1,70 @@
+person:
+  name: John
+  age : 35
+  gender: M
+  is_student: false
+  #Block Style - it recomended 
+  hobbis01:
+    - reading
+    - travelling
+    - hiking
+  #Flow Style 01- its json like structure
+  hobbis02: [reading,travelling,hiking]
+  #Flow Style 02- its json like structure
+  students:
+   - name: john Doe
+     age: 16
+     favorites: {subjects: [Math, Science, History]}
+   - name: Jane Smith
+     age: 16
+     favorites: {subjects: [Art, Bio, History]}
+  address:
+    Street: 123 Main Street
+    city: somecity
+    zipode: 12345
+## Sequence of Mappings - Block style
+  users:
+   - name: John Doe
+     age: 30
+     email: john.doe@eamaple.com
+
+   - name: Jame Smith
+     age: 16
+     email: jane.smith@example.com
+## Sequence of Mappings - Block style
+users: [
+  {name: John Doe, age: 30, email: john.doe@example.com}, 
+  {name: Jane Smith, age: 16, email: jane.smith@example.com}]
+
+## Mapping of sequence 
+## Block Style
+
+departments:
+ engineering:
+ - Alice
+ - Bob
+ - Carol
+
+ marketing: 
+ - Dave
+ - Eve
+ - Frank
+
+## Flow Style
+
+department: {engineering: [Alice, bob, carol], marketing: [Dave, Eve, Frank]}
+
+## Sets of YAML
+cities: !!set
+ ? Washington Dc
+ ? London
+ ? Delhi
+
+ ## Ordered Mappings in YAML
+ capitals: !!omap
+  - USA: Washington Dc
+  - United Kingdom: London
+  - India: Delhi
+
+## 
+ 

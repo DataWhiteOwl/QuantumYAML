@@ -1,0 +1,24 @@
+###### Date and TimeStamp in YAML
+# Standard Data Format : YYYY-MM-DD ---> 2034-07-23
+
+# Full Data & Time Format (Canonical) : YYYY-MM-DDTHH:MM:SSZ
+# T - separates the date and time
+# Z - indicate UTC time
+# Example - 2034-07-23T10:20:30Z
+
+# Full Data & Time with Timezone (iso8601) : 
+# YYYY-MM-DDTHH:MM:SS+HH:MM
+# YYYY-MM-DDTHH:MM:SS-HH:MM
+# Example - 2034-07-23T10:20:30+05:30
+
+# Others Examples - 2034-07-23 10:20:30 +05:30
+# Others Examples - 2034-07-23 10:20:30
+
+someDate: 2034-07-23
+timeStamp: 2034-07-23T10:20:30Z # canoical
+timeStamo_with_timezone: 2034-07-23T10:20:30+02:00 # iso8601
+spacetimestamp_with_timezone: 2034-07-23 10:20:30 -5 # with Spaces
+noTimeZone: 2034-07-23 10:20:30 # woth out time zone. UTC will be considers
+
+
+
